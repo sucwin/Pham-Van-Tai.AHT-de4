@@ -1,0 +1,282 @@
+.body-content{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+
+    .category{
+        position: absolute;
+        width: 60.945%;
+        left:19.5%;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+        margin:auto;
+        display: flex;
+        flex-flow: wrap;
+        margin-top: -252px;
+        &__item{
+            background-color:#ffffff;
+            flex: 0 0 33.333333%;
+            height:200px;
+            img{
+                width: 100%;
+            }
+            .icon{
+                text-align: center;
+                img{
+                    padding: 25px 0 0 0;
+                    width: 42.5px;
+                    margin: auto;
+                }
+            }
+            .title{
+                font-size: 14px;
+                font-weight: 800;
+                text-align: center;
+                margin-top: 13px;
+            }
+
+            .description{
+                padding:0 32px;
+                p{
+                    font-family: $font-Poppins;
+                    text-align: center;
+                    font-size: 12px;
+                    padding-top: 2px;
+                    color: #777777;
+                    font-weight: 500;
+
+                }
+            }
+            &--4{
+                .icon{
+                    img{
+                        margin-top: 13px;
+                        width: 55px;
+                    }
+                }
+            }
+        }
+    }
+    .nav-product{
+        padding-top: 250px;
+        width: 62.65%;
+        margin: auto;
+        ul{
+            display: flex;
+            margin:13px;
+            margin-top:-24px;
+            padding: 0;
+            :first-child{
+                color: rgb(221, 47, 49);
+                border-bottom: 2px solid rgb(221, 47, 49);
+            }
+            li{
+                font-size:14px;
+                font-weight:700;
+                list-style: none;
+                text-align: center;
+                padding:0 15px 8px 15px;
+            }
+            
+        }
+    }
+    .product{
+        padding-top: 20px;
+        width: 62.65%;
+        margin: auto;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-around;
+        &__item{
+            position:relative;
+            width:25%;
+            box-sizing: border-box;
+            text-align: center;
+            height:301px;
+            img{
+                width:90%;
+            }
+           &--info{
+               text-align: left;
+               margin-left:36px;
+               font-family: 'Poppins';
+               p{
+                   font-size:11px;
+                   font-weight:600;
+                   margin-bottom: 0px;
+                   padding-top: 4px;
+                    margin-bottom: -3px;
+               }
+               span{
+                    font-size:11px;
+                    font-weight:700;
+               }
+           }
+
+           &--6{
+               img{
+                   margin-top: -2px;
+               }
+           }
+           &--7{
+                img{
+                    margin-top: -5px;
+                }
+                div{
+                    p{
+                        margin-top:17px;
+                    }
+                }
+            }
+            &-choose{
+                top:6.5px;
+                right: 29px;
+                position: absolute;
+                &--1{
+                    background-image: url('../../assets/images/icon-base-cart.png');
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                   }
+                ul{
+                    margin: 0;
+                    padding: 0;
+                 
+                    li{
+                        font-size: 12px !important;
+                        list-style: none;
+                        padding:6.3px;
+                        margin: 8px 0;
+                        img{
+                            width: 12px;
+                        }
+                        i{
+                            color:white;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+.about-us{
+    padding-top: 3px;
+    text-align: center;
+    &__title{
+        font-size: 25px;
+        font-weight:bold;
+        margin-left: 4px;
+        padding-top: 2px;
+        text-transform: capitalize;
+    }
+    &__avatar{
+        margin: auto;
+        width: 5px;
+        height:5px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin-top: 3px;
+        img{
+           width:190px;
+           height: 190px;
+           margin-top: -30px;
+           margin-left: 15px;
+           object-fit: cover;
+        }
+    }
+    &__description{
+        padding-top:10px;
+        width:619px;
+        margin:auto;
+        p{
+            font-size:14px;
+            font-weight:400;
+            color: rgb(119, 119, 119);
+            line-height: 1.667;
+            text-align: center;
+        }
+    }
+    &__name{
+        margin-top:23px;
+        margin-bottom: 82px;
+
+        h3{
+            margin-top: 5px;
+            font-size:14px;
+            font-weight:800;
+            margin-bottom:0;
+        }
+        span{
+            margin: 0px;
+            color: rgb(119, 119, 119);
+            font-size:12px;
+        }
+    }
+
+    &__control{
+        display: flex;
+        padding-top: 30px;
+        justify-content: space-between;
+        width: 45px;
+        margin: auto;
+        :first-child{
+            background-color:#e70707;
+        }
+        span{
+            display: block;
+            width: 7px;
+            height: 7px;
+            background-color:#8a8989;
+            border-radius:50%;
+        }
+    }
+}
+
+.brand{
+    padding-top: 30px;
+    width: 61%;
+    margin:auto;
+    display:flex;
+    justify-content: space-around;
+    padding-bottom: 25px;
+    border-top: 1px solid #c9c5c5;
+    &__item{
+        padding-left: 5px;
+        img{
+            margin-top: 10px;
+            width: 99px;
+        }
+        &--1{
+            margin-left: -13px;
+            margin-top:-9px;
+        }
+        &--2{
+            img{
+                width: 105px;
+            }
+            margin-top: -4px;
+            margin-left: 1px;
+        }
+        &--3{
+            margin-top: -9px;
+        }
+        &--4{
+            margin-top: 3px;
+            padding-left: 6px;
+            img{
+                width: 105px;
+            }
+        }
+        &--5{
+            img{
+                width: 105px;
+            }
+        }
+        &--6{
+            margin-top: -3px;
+        }
+    }
+}
