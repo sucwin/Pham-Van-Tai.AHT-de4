@@ -27,10 +27,9 @@ body {
   padding: 0; }
 
 a {
-  color: #000;
+  color: inherit;
   text-decoration: #000; }
   a:hover {
-    color: #000;
     text-decoration: underline; }
 
 ul {
@@ -113,7 +112,8 @@ button {
       align-items: center;
       margin-top: 2px; }
       .header-inner__icon-group .icon-item {
-        color: #ffffff; }
+        color: #ffffff;
+        cursor: pointer; }
       .header-inner__icon-group span {
         color: #ffffff;
         padding: 0 25px; }
@@ -156,7 +156,8 @@ button {
         font-weight: 400;
         color: #ffffff;
         border: 1px solid #9a9b9b;
-        padding: 15px 45px; }
+        padding: 15px 45px;
+        cursor: pointer; }
   .main-content .banner .image {
     display: flex;
     flex-direction: column;
@@ -326,8 +327,8 @@ button {
     justify-content: space-between;
     width: 45px;
     margin: auto; }
-    .main-content .about-us__control :first-child {
-      background-color: #e70707; }
+    .main-content .about-us__control--active {
+      background-color: #e70707 !important; }
     .main-content .about-us__control span {
       display: block;
       width: 9px;

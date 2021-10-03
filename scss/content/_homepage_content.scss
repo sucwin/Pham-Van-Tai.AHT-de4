@@ -43,6 +43,7 @@
                     color: $title-color;
                     border: 1px solid $btn-boder-color;
                     padding: 15px 45px;
+                    cursor: pointer;
                 }
             }
         }
@@ -274,8 +275,8 @@
             justify-content: space-between;
             width: 45px;
             margin: auto;
-            :first-child{
-                background-color:#e70707;
+            &--active{
+                background-color:#e70707 !important;
             }
             span{
                 display: block;

@@ -28,7 +28,7 @@ $(document).ready(function () {
     const aboutUsList= [
         {
             img:'./img/avatar.png',
-            content:'Great services. i bought a bicycle with a wrong but they accepted free return for me and exchange a new product for me',
+            content:'"Good services. i bought a bicycle with a wrong but they accepted free return for me and exchange a new product for me',
             name:'LiNa'
         },
         {
@@ -47,9 +47,9 @@ $(document).ready(function () {
     let number=0;
     setInterval(()=>{
         if(number>2){
-            number=0;
+            number=-1;
         }
-        data= aboutUsList[number++];
+        data= aboutUsList[++number];
         $('#about-us-id').html(`
             <div class="about-us__title">
                 <h3>
@@ -66,9 +66,9 @@ $(document).ready(function () {
                 <h3>${data.name}</h3>
                 <span>Happy clients</span>
                 <p class="about-us__control">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span class=${number==0?"about-us__control--active":""}></span>
+                    <span class=${number==1?"about-us__control--active":""}></span>
+                    <span class=${number==2?"about-us__control--active":""}></span>
                 </p>
             </div>
     `)
