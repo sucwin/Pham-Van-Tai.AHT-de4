@@ -348,7 +348,13 @@
        font-size:20px;
    }
 }
-
+.mobile-icon-group{
+    display: flex;
+    padding:30px 0;
+    .icon-item{
+        padding: 0 15px;
+    }
+}
 .close{
     display: none;
 }
