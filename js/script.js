@@ -27,7 +27,7 @@ $(document).ready(function () {
 
     const aboutUsList= [
         {
-            img:'./../img/avatar.png',
+            img:'./img/avatar.png',
             content:'"Good services. i bought a bicycle with a wrong but they accepted free return for me and exchange a new product for me',
             name:'LiNa'
         },
@@ -46,7 +46,7 @@ $(document).ready(function () {
     ];
     let number=0;
     setInterval(()=>{
-        if(number>2){
+        if(number>1){
             number=-1;
         }
         data= aboutUsList[++number];
