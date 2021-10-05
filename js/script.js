@@ -27,7 +27,7 @@ $(document).ready(function () {
 
     const aboutUsList= [
         {
-            img:'./img/avatar.png',
+            img:'./../img/avatar.png',
             content:'"Good services. i bought a bicycle with a wrong but they accepted free return for me and exchange a new product for me',
             name:'LiNa'
         },
