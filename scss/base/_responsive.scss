@@ -14,14 +14,16 @@
             }
         }
     }
-    .category{
-        .col-4{
-            .item{
-                img{
-                    height: 100%;
-                }
-            }
-        }
+    
+    .main-content .category .item {
+        line-height:0;
+    }
+    .main-content .category .item .items-wapper {
+        padding:15px;
+    }
+    .footer__contact ul {
+        width: 50%;
+        margin-bottom: 30px;
     }
 }
 @media all and (max-width: 1024px) {
@@ -54,7 +56,9 @@
   
     .main-content .category .row .col-4 {
         width: 50%;
+        max-height: unset;
     }
+    
     .products-list{
         .row{
             .col-3{
@@ -91,6 +95,8 @@
     .main-content .banner-inner {
         flex-direction: column-reverse;
     }
+
+    
     .footer__contact {
         width: 95%;
         flex-flow: wrap;
@@ -106,6 +112,26 @@
                 z-index: 1;
             }
         }
+    }
+    .main-content .category .row .col-4 {
+        width: 100%;
+        .item{
+           .items-wapper{
+               padding:30px;
+               .title{
+                   margin-top:50px;
+               }
+                .icon{
+                    width: 100px;
+                }
+                .description{
+                    font-size:18px;
+                }
+           }
+        }
+    }
+    .main-content .category .item {
+        line-height:unset;
     }
 }
 @media all and (max-width: 576px) {
@@ -136,8 +162,10 @@
     .main-content .products-list .col-3 .product__item {
         height: 240px;
     }
-    .footer__contact .contact {
+    .footer__contact ul {
+        text-align: center;
         width: 100%;
+        margin-bottom: 30px;
     }
     .copyright  {
        padding-bottom: 14px;
@@ -147,6 +175,23 @@
             .intro{
                 z-index: 1;
             }
+        }
+    }
+
+    .main-content .category .row .col-4 {
+        .item{
+           .items-wapper{
+               padding:15px;
+               .title{
+                   margin-top:30px;
+               }
+                .icon{
+                    width: 90px;
+                }
+                .description{
+                    font-size:16px;
+                }
+           }
         }
     }
 }
