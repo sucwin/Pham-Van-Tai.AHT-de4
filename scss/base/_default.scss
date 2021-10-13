@@ -1,14 +1,12 @@
-body {
+html,body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 a {
     color: inherit;
     text-decoration: #000;
-    &:hover {
-        // color: #000;
-        text-decoration: underline;
-    }
 }
 ul {
     margin: 0;

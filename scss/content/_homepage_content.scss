@@ -1,5 +1,6 @@
 
 .main-content{
+    background-color:#FFFFFF;
     .banner{
         background-image: url(./../img/slider.png);
         background-size: cover;
@@ -198,7 +199,7 @@
                                     width: 19px;
                                 }
                                 i{
-                                    font-size:10x;
+                                    // font-size:10px;
                                     color:rgb(109, 105, 105);
                                 }
                                 &:hover{
@@ -320,8 +321,8 @@
         }
     }
     .line{
-        height:0.5px;
-        background-color:rgb(192, 189, 189);
+        height:1px;
+        background-color:#cccccc;
         margin-top:-4px;
         margin-bottom: 4px;
     }
@@ -374,7 +375,22 @@
 .close{
     display: none;
 }
+#product6{
+    .product__item{
+        .product-image{
+            margin-top: -9px;
+        }
+    }
+}
 
+#product7{
+    .product__item{
+        .product-image{
+            margin-top: -13px;
+            padding-bottom: 7px;
+        }
+    }
+}
 @keyframes show-menu {
     from {
         right:-100%;
