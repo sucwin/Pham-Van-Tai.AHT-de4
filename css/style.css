@@ -229,6 +229,7 @@ button {
       margin-top: 191px;
       margin-right: -22px; }
   .main-content .category {
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
     margin-top: -77px;
     z-index: 999; }
     .main-content .category .row {
@@ -609,7 +610,7 @@ button {
       .main-content .category .row .col-4 .item .items-wapper .description {
         font-size: 18px; }
   .main-content .category .item {
-    line-height: unset; } }
+    line-height: 0; } }
 
 @media all and (max-width: 576px) {
   .main-content .banner .image img {

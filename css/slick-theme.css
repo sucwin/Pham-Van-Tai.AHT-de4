@@ -191,8 +191,8 @@
     content: '•';
     text-align: center;
 
-    opacity: .25;
-    color: rgb(236, 15, 15);
+    /* opacity: .25; */
+    color: #cccccc;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -200,5 +200,5 @@
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
-    color: rgb(233, 15, 15);
+    color: #dd2f31;
 }
